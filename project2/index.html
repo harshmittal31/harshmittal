@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>java script functions</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+    .grid-item {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    button, input, select {
+      width: 90%;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>JavaScript Functionalities</h1>
+  <div class="grid-container">
+
+    <div class="grid-item">
+      <h2>Color Toggle Button</h2>
+      <button id="colorButtonMain">Click Me</button>
+      <div id="colorOutput"></div>
+    </div>
+
+    <div class="grid-item">
+      <h2>Variables & Data Types</h2>
+      <input type="text" id="name" placeholder="Enter your name" />
+      <input type="number" id="number" placeholder="Enter a number" />
+      <button onclick="displayValues()">Submit</button>
+      <div id="valuesOutput"></div>
+    </div>
+
+    <div class="grid-item">
+      <h2>JS Operators</h2>
+      <button onclick="performOperations()">Run Activity</button>
+      <div id="operationsOutput"></div>
+    </div>
+
+    <div class="grid-item">
+      <h2>Grade Calculator</h2>
+      <input type="number" id="marks" placeholder="Enter your marks">
+      <button onclick="calculateGrade()">Check Grade</button>
+      <div id="gradeOutput"></div>
+    </div>
+
+    <div class="grid-item">
+      <h2>User Profile</h2>
+      <input type="text" id="profileName" placeholder="Your Name">
+      <input type="number" id="age" placeholder="Your Age">
+      <select id="isStudent">
+        <option value="true">Yes</option>
+        <option value="false">No</option>
+      </select>
+      <button onclick="displayProfile()">Submit</button>
+      <div id="profileOutput"></div>
+    </div>
+
+    <div class="grid-item">
+      <h2>Multiplication Table</h2>
+      <input type="number" id="tableNum" placeholder="Enter a number">
+      <button onclick="generateTable()">Generate Table</button>
+      <div id="tableOutput"></div>
+    </div>
+
+    <div class="grid-item">
+      <h2>Control Flow & Loops</h2>
+      <input type="number" id="controlNum" placeholder="Enter a number">
+      <button onclick="checkEvenOdd()">Check Even or Odd</button>
+      <button onclick="printNumbers()">Print 1 to 10</button>
+      <button onclick="countDown()">Count Down 5 to 1</button>
+      <div id="controlFlowOutput"></div>
+    </div>
+    
+
+    <div class="grid-item">
+      <h2>JS Functions</h2>
+      <input type="number" id="functionNum" placeholder="Enter a number">
+      <button onclick="calculateSquare()">Square</button>
+      <button onclick="addNumbers()">Add Two Numbers</button>
+      <button onclick="checkEvenOddInFunctions()">Even or Odd</button>
+      <div id="functionsOutput"></div>
+    </div>
+
+    <div class="grid-item">
+      <h2>Simple Calculator</h2>
+      <input type="number" id="num1" placeholder="First number">
+      <input type="number" id="num2" placeholder="Second number">
+      <select id="operation">
+        <option value="add">Add</option>
+        <option value="subtract">Subtract</option>
+        <option value="multiply">Multiply</option>
+        <option value="divide">Divide</option>
+      </select>
+      <button onclick="calculate()">Calculate</button>
+      <div id="calculatorOutput"></div>
+    </div>
+
+    <div class="grid-item">
+      <h2>Dynamic Color Mixer 🎨</h2>
+      <label>Red: <span id="redValue">0</span></label>
+      <input type="range" id="red" min="0" max="255" value="0" oninput="updateColor()"><br>
+      <label>Green: <span id="greenValue">0</span></label>
+      <input type="range" id="green" min="0" max="255" value="0" oninput="updateColor()"><br>
+      <label>Blue: <span id="blueValue">0</span></label>
+      <input type="range" id="blue" min="0" max="255" value="0" oninput="updateColor()"><br>
+      <div id="colorBox" style="width:100%; height:50px; margin-top:10px;"></div>
+    </div>
+
+    <div class="grid-item">
+      <h2>JavaScript Event Handling</h2>
+    <!-- Task 1: Button Click Event -->
+    <h3>Task 1: Click the Button to Change Color</h3>
+    <button id="colorButtonEvent">Click Me!</button>
+
+    <!-- Task 2: Keyboard Event -->
+    <h3>Task 2: Press Keys in the Input Field</h3>
+    <input type="text" id="keyLogger" placeholder="Type something...">
+    <p>Check the console for logged keys.</p>
+
+    <!-- Task 3: Form Submission Event -->
+    <h3>Task 3: Form Submission</h3>
+    <form id="myForm">
+        <input type="text" placeholder="Enter your name">
+        <button type="submit">Submit Form</button>
+    </form>
+    </div>
+
+    <div class="grid-item">
+      <h2>Light Bulb Toggle 💡</h2>
+    
+    <!-- Light Bulb Image -->
+    <img id="bulbImage" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="Light Bulb">
+    
+    <!-- Button to Toggle Bulb -->
+    <button id="toggleButton">Turn ON</button>
+
+  </div>
+
+  <div class="grid-item">
+    <h2>Real-Time Digital Clock ⏰</h2>
+    <!-- Clock Display -->
+    <div id="clock">00:00:00</div>
+    <!-- Start/Stop Button -->
+    <button id="toggleClock">Start Clock</button>
+  </div>
+
+  </div>
+
+  <script src="work.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #727e85;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    background-color: blue;
+    color: white;
+    font-size: 100px;
+    margin: auto;
+    padding: 50px 50px 50px 50px;
+    margin-bottom: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Fixed 3-column layout */
+    grid-template-rows: repeat(4,1fr) ;
+    gap: 60px;
+    padding: 20px;
+    max-width: 90%;
+    margin: auto;
+    
+}
+
+.grid-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    border: 5px solid #000000; /* Solid visible border */
+    box-shadow: none;
+    text-align: center;
+}
+
+input, select, button {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 30px 30px;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #3448fa;
+    
+   
+  }
+  
+  button.active {
+    background-color: red ;
+    color: white;
+  }
+  
+
+#colorBox {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.color-value {
+    font-weight: bold;
+}
+
+output, div[id$="Output"] {
+    margin-top: 25px;
+    display: block;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+
+  
+
+input[type="text"] {
+    padding: 10px;
+    margin: 20px;
+    font-size: 20px;
+    width: 50%;
+}
+form {
+    margin-top: 20px;
+    font-size: 70px;
+    font-weight: bold;
+} 
+
+img {
+    width: 150px;
+    margin: 20px;
+}
+
+#clock {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 90px;
+}
+
